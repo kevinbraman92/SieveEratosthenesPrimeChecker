@@ -21,6 +21,7 @@ public class MyNumber {
                         "\nNumber argument cannot be less than 2! If creating a new object, the number data member will default to 2.");
             } else {
                 this.number = number;
+                this.countOfPrimes = 0;
                 this.prepareArray();
                 this.sievePrimeMethod(this.booleanArray);
             }
@@ -62,15 +63,12 @@ public class MyNumber {
             }
         }
 
-        int primeCount = 0;
         for (int i = 2; i <= this.number; i++) {
             if (array[i]) {
-                primeCount++;
+                this.countOfPrimes++;
                 this.primesList.add(i);
             }
         }
-
-        this.countOfPrimes = primeCount;
         return array;
     }
 

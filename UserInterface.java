@@ -19,10 +19,10 @@ public class UserInterface {
 
     private void commands() {
         System.out.println("\nThis program supports the following commands:");
-        System.out.println("Help: Will output this command list.");
         System.out.println(
                 "Check Prime: Will ask for a number and check if it is prime as well as how many prime numbers exist from 2 to that number.");
-        System.out.println("Welcome: Will reprint the welcome message.");
+        System.out.println("Welcome: Will reprint the welcomes message.");
+        System.out.println("Help: Will output this commands list.");
         System.out.println("Exit: Will exit the program.");
     }
 
